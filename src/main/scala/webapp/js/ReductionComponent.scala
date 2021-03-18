@@ -75,7 +75,6 @@ final private class ReductionComponent {
             button(
               "Вычислить",
               idAttr := "reductionButton",
-              attr("aria-describedby") := "tooltip",
               `type` := "submit",
               backgroundColor := "#AD6ECC",
               cls := "btn btn-primary mb-3",
@@ -88,10 +87,6 @@ final private class ReductionComponent {
           cls := "row justify-content-md-left",
           div(
             cls := "pr-1 col-9",
-            //            div(
-            //                cls := "card-header",
-            //                "Результат:",
-            //              ),
             submits.map { t =>
               redStrat.map(s =>
                 CoreAPI
